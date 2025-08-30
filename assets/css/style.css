@@ -349,12 +349,16 @@ p {
     margin: 0 auto 1.5rem;
     overflow: hidden;
     border: 4px solid var(--secondary-color);
+    background: var(--white);
+    padding: 8px;
 }
 
 .author-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background: var(--white);
+    border-radius: 50%;
 }
 
 .author-info h3 {
@@ -923,12 +927,19 @@ p {
     border-radius: 15px;
     overflow: hidden;
     border: none;
+    background: var(--white);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .author-profile .author-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    background: var(--white);
+    border-radius: 10px;
 }
 
 .author-details h2 {
@@ -1192,6 +1203,7 @@ p {
         width: 200px;
         height: 200px;
         margin: 0 auto;
+        padding: 10px;
     }
 
     .author-stats-detailed {
