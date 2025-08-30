@@ -1418,7 +1418,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
+    min-height: 100%;
+    overflow: visible;
 }
 
 .book-meta {
@@ -1486,10 +1487,12 @@ p {
 
 /* Book Purchase Buttons */
 .book-purchase-buttons {
-    display: flex;
+    display: flex !important;
     gap: 0.8rem;
     margin-top: auto;
     flex-wrap: wrap;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .book-purchase-buttons .btn {
