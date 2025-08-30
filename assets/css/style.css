@@ -371,7 +371,7 @@ p {
 .author-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     background: var(--white);
     border-radius: 50%;
     display: block;
@@ -850,14 +850,12 @@ p {
     }
 
     .author-image img {
-        width: 90% !important;
-        height: 90% !important;
+        width: 100% !important;
+        height: 100% !important;
         border-radius: 50% !important;
-        object-fit: contain !important;
+        object-fit: cover !important;
         background: var(--white) !important;
         display: block !important;
-        max-width: 90px !important;
-        max-height: 90px !important;
     }
 
     .section-title {
@@ -917,14 +915,12 @@ p {
     }
 
     .author-image img {
-        width: 85% !important;
-        height: 85% !important;
+        width: 100% !important;
+        height: 100% !important;
         border-radius: 50% !important;
-        object-fit: contain !important;
+        object-fit: cover !important;
         background: var(--white) !important;
         display: block !important;
-        max-width: 70px !important;
-        max-height: 70px !important;
     }
 
     .book-links {
@@ -1014,7 +1010,7 @@ p {
 .author-profile .author-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     background: var(--white);
     border-radius: 10px;
 }
