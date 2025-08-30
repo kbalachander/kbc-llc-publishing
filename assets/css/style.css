@@ -1084,28 +1084,35 @@ p {
 /* Placeholder will be handled by JavaScript for missing images */
 
 /* Coming Soon placeholder for unpublished books */
-.book-item-image.coming-soon {
+.book-item-image.coming-soon,
+.book-cover.coming-soon {
     background: linear-gradient(135deg, var(--warning-color), #e67e22);
     color: var(--white);
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
-.book-item-image.coming-soon::before {
+.book-item-image.coming-soon::before,
+.book-cover.coming-soon::before {
     content: "📖";
     font-size: 4rem;
     margin-bottom: 1rem;
     color: var(--white);
+    position: static;
+    z-index: auto;
 }
 
-.book-item-image.coming-soon::after {
+.book-item-image.coming-soon::after,
+.book-cover.coming-soon::after {
     content: "COMING SOON";
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 2px;
     color: var(--white);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: static;
 }
 
 .book-item img {
