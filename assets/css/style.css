@@ -2273,27 +2273,7 @@ p {
     font-size: 3rem;
 }
 
-/* Better handling of missing images */
-.author-image {
-    background: linear-gradient(135deg, var(--secondary-color), #2980b9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    font-size: 3rem;
-    position: relative;
-}
-
-.author-image::before {
-    content: "👤";
-    position: absolute;
-    z-index: 1;
-}
-
-.author-image img {
-    position: relative;
-    z-index: 2;
-}
+/* Author image fallback handled by main .author-image styling */
 
 .book-cover {
     background: linear-gradient(135deg, var(--accent-color), #c0392b);
