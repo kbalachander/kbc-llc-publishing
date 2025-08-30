@@ -1441,10 +1441,43 @@ p {
 .book-card-detailed .book-details {
     display: flex;
     gap: 1rem;
-    margin-top: auto;
+    margin-bottom: 1.5rem;
     font-size: 0.85rem;
     color: var(--text-muted);
     align-items: center;
+}
+
+/* Book Purchase Buttons */
+.book-purchase-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.book-purchase-buttons .btn {
+    flex: 1;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    text-align: center;
+}
+
+.btn-disabled {
+    background: var(--text-muted);
+    color: var(--white);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btn-disabled:hover {
+    background: var(--text-muted);
+    transform: none;
+    box-shadow: var(--shadow);
 }
 
 .book-details span {
@@ -1582,6 +1615,16 @@ p {
     .book-overlay .btn {
         font-size: 0.75rem;
         padding: 6px 12px;
+    }
+
+    .book-purchase-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .book-purchase-buttons .btn {
+        min-width: auto;
+        width: 100%;
     }
 }
 
