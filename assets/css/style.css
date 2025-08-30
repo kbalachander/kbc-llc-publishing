@@ -454,6 +454,7 @@ p {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .book-card .book-details h3 {
@@ -470,17 +471,22 @@ p {
 }
 
 .book-card .book-genre {
-    color: var(--text-muted);
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
     font-size: 0.8rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    display: inline-block;
     margin-bottom: 1rem;
+    width: fit-content;
 }
 
 .book-card .book-description {
     color: var(--text-light);
     flex: 1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 0.95rem;
     line-height: 1.6;
 }
@@ -488,6 +494,7 @@ p {
 .book-card .book-links {
     display: flex;
     gap: 0.5rem;
+    margin-top: auto;
 }
 
 .book-info h3 {
@@ -1151,8 +1158,9 @@ p {
     font-weight: 600;
     text-transform: uppercase;
     white-space: nowrap;
-    align-self: flex-start;
-    margin-top: 0.5rem;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
 }
 
 .book-status.published {
@@ -1379,27 +1387,33 @@ p {
     white-space: nowrap;
 }
 
-.book-info {
+.book-card-detailed .book-info {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 .book-meta {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .book-genre {
     background: var(--secondary-color);
     color: var(--white);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .book-info h3 {
@@ -1409,27 +1423,28 @@ p {
     line-height: 1.4;
 }
 
-.book-author {
+.book-card-detailed .book-author {
     color: var(--secondary-color);
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 0.95rem;
 }
 
-.book-description {
+.book-card-detailed .book-description {
     color: var(--text-light);
     flex: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
-.book-details {
+.book-card-detailed .book-details {
     display: flex;
     gap: 1rem;
     margin-top: auto;
     font-size: 0.85rem;
     color: var(--text-muted);
+    align-items: center;
 }
 
 .book-details span {
