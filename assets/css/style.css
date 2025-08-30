@@ -1081,12 +1081,7 @@ p {
     border-bottom: 1px solid var(--border-color);
 }
 
-.book-item-image::before {
-    content: "📚";
-    position: absolute;
-    z-index: 1;
-    color: var(--text-muted);
-}
+/* Placeholder will be handled by JavaScript for missing images */
 
 /* Coming Soon placeholder for unpublished books */
 .book-item-image.coming-soon {
@@ -2289,11 +2284,7 @@ p {
     position: relative;
 }
 
-.book-cover::before {
-    content: "📚";
-    position: absolute;
-    z-index: 1;
-}
+/* Book cover placeholder removed - using JavaScript handling */
 
 .book-cover img {
     position: relative;

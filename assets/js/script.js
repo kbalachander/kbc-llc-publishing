@@ -344,8 +344,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle missing images gracefully
     document.querySelectorAll('img').forEach(img => {
         img.onerror = function() {
-            this.style.display = 'none';
-            // The CSS ::before content will show instead
+            const parent = this.closest('.book-item-image, .book-cover');
+            if (parent) {
+                this.style.display = 'none';
+                parent.style.background = 'linear-gradient(135deg, var(--accent-color), #c0392b)';
+                parent.innerHTML = '<span style="color: white; font-size: 3rem;">📚</span>';
+            }
         };
     });
 
