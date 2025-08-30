@@ -31,7 +31,7 @@ Official website for KBC LLC, a dynamic independent publishing house specializin
 
 - **Email:** kbcllc2025@gmail.com
 - **Phone:** +1 (408) 680-1491
-- **Website:** [https://kbalachander.github.io/kbc-llc-website/](https://kbalachander.github.io/kbc-llc-website/)
+- **Website:** [https://kbalachander.github.io/kbc-llc-publishing/](https://kbalachander.github.io/kbc-llc-publishing/)
 
 ## 🛠 Technical Details
 
