@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    document.querySelectorAll('.author-card, .book-card, .genre-card').forEach(el => {
+    document.querySelectorAll('.author-card, .book-card, .book-card-detailed, .genre-card').forEach(el => {
         el.classList.add('animate-on-scroll');
         observer.observe(el);
     });
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Book filter functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const bookCards = document.querySelectorAll('.book-card');
+    const bookCards = document.querySelectorAll('.book-card-detailed');
 
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const searchTerm = this.value.toLowerCase();
             
             bookCards.forEach(card => {
-                const title = card.querySelector('h3').textContent.toLowerCase();
+                const title = card.querySelector('.book-info h3').textContent.toLowerCase();
                 const author = card.querySelector('.book-author').textContent.toLowerCase();
                 
                 if (title.includes(searchTerm) || author.includes(searchTerm)) {
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Hover effects for cards
-    document.querySelectorAll('.author-card, .book-card, .genre-card').forEach(card => {
+    document.querySelectorAll('.author-card, .book-card, .book-card-detailed, .genre-card').forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px)';
         });
