@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Filter books
             bookCards.forEach(card => {
                 if (filter === 'all' || card.getAttribute('data-genre') === filter) {
-                    card.style.display = '';
+                    card.style.display = 'grid';
                     card.classList.add('fade-in');
                 } else {
                     card.style.display = 'none';
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const author = card.querySelector('.book-author').textContent.toLowerCase();
                 
                 if (title.includes(searchTerm) || author.includes(searchTerm)) {
-                    card.style.display = '';
+                    card.style.display = 'grid';
                 } else {
                     card.style.display = 'none';
                 }
