@@ -261,6 +261,10 @@ p {
     z-index: 2;
     text-align: center;
     color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-title {
@@ -276,6 +280,7 @@ p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .hero-stats {
@@ -1993,18 +1998,76 @@ p {
     }
 }
 
-/* Placeholder Images */
-.author-image img[src*="placeholder"],
-.book-cover img[src*="placeholder"] {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+/* Placeholder Images - Handle missing images */
+.author-image img,
+.book-cover img {
+    background: linear-gradient(135deg, var(--secondary-color), #2980b9);
+    border: none;
+}
+
+.author-image img:not([src]),
+.author-image img[src=""],
+.author-image img[src*="authors/"]:not([src*="http"]) {
+    content: "👤";
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, var(--secondary-color), #2980b9);
+    color: var(--white);
+    font-size: 3rem;
 }
 
-.author-image img[src*="placeholder"]::after,
-.book-cover img[src*="placeholder"]::after {
+.book-cover img:not([src]),
+.book-cover img[src=""],
+.book-cover img[src*="books/"]:not([src*="http"]) {
     content: "📚";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent-color), #c0392b);
+    color: var(--white);
+    font-size: 3rem;
+}
+
+/* Better handling of missing images */
+.author-image {
+    background: linear-gradient(135deg, var(--secondary-color), #2980b9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 3rem;
+    position: relative;
+}
+
+.author-image::before {
+    content: "👤";
+    position: absolute;
+    z-index: 1;
+}
+
+.author-image img {
+    position: relative;
+    z-index: 2;
+}
+
+.book-cover {
+    background: linear-gradient(135deg, var(--accent-color), #c0392b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
     font-size: 2rem;
-    color: var(--text-muted);
+    position: relative;
+}
+
+.book-cover::before {
+    content: "📚";
+    position: absolute;
+    z-index: 1;
+}
+
+.book-cover img {
+    position: relative;
+    z-index: 2;
 }

@@ -341,6 +341,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Handle missing images gracefully
+    document.querySelectorAll('img').forEach(img => {
+        img.onerror = function() {
+            this.style.display = 'none';
+            // The CSS ::before content will show instead
+        };
+    });
+
     console.log('KBC LLC Website loaded successfully!');
 });
 
