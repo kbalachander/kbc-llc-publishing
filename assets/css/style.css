@@ -1088,31 +1088,33 @@ p {
 .book-cover.coming-soon {
     background: linear-gradient(135deg, var(--warning-color), #e67e22);
     color: var(--white);
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.book-item-image.coming-soon::before,
-.book-cover.coming-soon::before {
-    content: "📖";
-    font-size: 4rem;
-    margin-bottom: 1rem;
+.coming-soon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: var(--white);
-    position: static;
-    z-index: auto;
 }
 
-.book-item-image.coming-soon::after,
-.book-cover.coming-soon::after {
-    content: "COMING SOON";
+.coming-soon-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.coming-soon-text {
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 2px;
-    color: var(--white);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    position: static;
+    color: var(--white);
 }
 
 .book-item img {
@@ -1153,21 +1155,6 @@ p {
     flex: 1;
 }
 
-.book-status {
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    white-space: nowrap;
-    flex-shrink: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 32px;
-    line-height: 1;
-    box-sizing: border-box;
-}
 
 .book-status.published {
     background: #d5f4e6;
@@ -1404,15 +1391,14 @@ p {
 .book-meta {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 1rem;
     margin-bottom: 1rem;
     flex-wrap: wrap;
 }
 
-.book-genre {
-    background: var(--secondary-color);
-    color: var(--white);
+.book-genre,
+.book-status {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -1426,6 +1412,12 @@ p {
     min-height: 32px;
     line-height: 1;
     box-sizing: border-box;
+    vertical-align: top;
+}
+
+.book-genre {
+    background: var(--secondary-color);
+    color: var(--white);
 }
 
 .book-info h3 {
