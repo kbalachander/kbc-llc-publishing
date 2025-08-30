@@ -1154,7 +1154,7 @@ p {
 }
 
 .book-status {
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -1163,8 +1163,10 @@ p {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
-    height: 32px;
+    justify-content: center;
+    min-height: 32px;
     line-height: 1;
+    box-sizing: border-box;
 }
 
 .book-status.published {
@@ -1402,7 +1404,7 @@ p {
 .book-meta {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
     gap: 1rem;
     margin-bottom: 1rem;
     flex-wrap: wrap;
@@ -1411,7 +1413,7 @@ p {
 .book-genre {
     background: var(--secondary-color);
     color: var(--white);
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
@@ -1420,8 +1422,10 @@ p {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
-    height: 32px;
+    justify-content: center;
+    min-height: 32px;
     line-height: 1;
+    box-sizing: border-box;
 }
 
 .book-info h3 {
