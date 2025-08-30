@@ -1156,6 +1156,8 @@ p {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
+    height: 32px;
+    line-height: 1;
 }
 
 .book-status.published {
@@ -1409,6 +1411,10 @@ p {
     text-transform: uppercase;
     white-space: nowrap;
     flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    line-height: 1;
 }
 
 .book-info h3 {
