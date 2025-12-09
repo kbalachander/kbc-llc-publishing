@@ -81,20 +81,27 @@ document.addEventListener('DOMContentLoaded', function() {
     function animateCounters() {
         const counters = document.querySelectorAll('.stat-number');
         counters.forEach(counter => {
-            const target = parseInt(counter.textContent.replace('+', ''));
+            // Store original text and check for '+' suffix before animation
+            const originalText = counter.textContent;
+            const hasPlus = originalText.includes('+');
+            const target = parseInt(originalText.replace('+', ''));
+
+            if (isNaN(target) || counter.dataset.animated === 'true') return;
+
+            counter.dataset.animated = 'true';
             const increment = target / 50;
             let current = 0;
-            
+
             const updateCounter = () => {
                 if (current < target) {
                     current += increment;
-                    counter.textContent = Math.ceil(current) + (counter.textContent.includes('+') ? '+' : '');
+                    counter.textContent = Math.ceil(current) + (hasPlus ? '+' : '');
                     requestAnimationFrame(updateCounter);
                 } else {
-                    counter.textContent = target + (counter.textContent.includes('+') ? '+' : '');
+                    counter.textContent = target + (hasPlus ? '+' : '');
                 }
             };
-            
+
             updateCounter();
         });
     }
@@ -259,6 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToTopButton = document.createElement('button');
     backToTopButton.innerHTML = '<i class="fas fa-chevron-up"></i>';
     backToTopButton.className = 'back-to-top';
+    backToTopButton.setAttribute('aria-label', 'Back to top');
     backToTopButton.style.cssText = `
         position: fixed;
         bottom: 20px;
@@ -267,7 +275,7 @@ document.addEventListener('DOMContentLoaded', function() {
         height: 50px;
         border: none;
         border-radius: 50%;
-        background: var(--secondary-color);
+        background: #3498db;
         color: white;
         font-size: 1.2rem;
         cursor: pointer;
@@ -347,13 +355,39 @@ document.addEventListener('DOMContentLoaded', function() {
             const parent = this.closest('.book-item-image, .book-cover');
             if (parent) {
                 this.style.display = 'none';
-                parent.style.background = 'linear-gradient(135deg, var(--accent-color), #c0392b)';
+                parent.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
                 parent.innerHTML = '<span style="color: white; font-size: 3rem;">📚</span>';
             }
         };
     });
 
-    console.log('KBC LLC Website loaded successfully!');
+    // FAQ Accordion functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+            question.addEventListener('click', () => {
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        }
+    });
+
+    // URL parameter handling for genre filtering
+    const urlParams = new URLSearchParams(window.location.search);
+    const genreParam = urlParams.get('genre');
+    if (genreParam && document.querySelector('.filter-btn')) {
+        const filterBtn = document.querySelector(`.filter-btn[data-filter="${genreParam}"]`);
+        if (filterBtn) {
+            filterBtn.click();
+        }
+    }
 });
 
 // Utility functions
@@ -382,15 +416,9 @@ function throttle(func, limit) {
     }
 }
 
-// Performance optimizations
+// Performance optimizations - debounced resize handler
 const debouncedResize = debounce(() => {
-    // Handle resize events
-    console.log('Window resized');
+    // Handle resize events (e.g., recalculate layout)
 }, 250);
 
-const throttledScroll = throttle(() => {
-    // Handle scroll events
-}, 16);
-
 window.addEventListener('resize', debouncedResize);
-window.addEventListener('scroll', throttledScroll);

@@ -1,0 +1,420 @@
+{
+  "company": {
+    "name": "KBC LLC",
+    "tagline": "Independent Publishing Excellence",
+    "email": "kbcllc2025@gmail.com",
+    "phone": "+1 (408) 680-1491",
+    "url": "https://kbcllc.org",
+    "stats": {
+      "totalTitles": 23,
+      "featuredAuthors": 5,
+      "activeSeries": 3,
+      "retailPlatforms": 12
+    }
+  },
+  "authors": [
+    {
+      "id": "bishop-king",
+      "name": "Bishop King",
+      "genre": "Contemporary Romance",
+      "image": "assets/images/authors/bishop-king.jpg",
+      "imageLarge": "assets/images/authors/bishop-king-large.jpg",
+      "bio": "Bishop King crafts heartwarming contemporary romance novels that explore themes of second chances, international love, and emotional healing. With a talent for creating authentic characters and compelling relationships, Bishop's stories take readers on journeys across continents and cultures, proving that love knows no boundaries.",
+      "stats": {
+        "publishedBooks": 5,
+        "publishingSince": 2025,
+        "series": 3
+      },
+      "specialties": ["Second Chance Romance", "International Settings", "Emotional Healing", "Contemporary Fiction"],
+      "links": {
+        "amazon": "https://www.amazon.com/stores/Bishop-King/author/B0FD9BG26K",
+        "books2read": "https://books2read.com/ap/nOoWeo/Bishop-King"
+      }
+    },
+    {
+      "id": "rio-vale",
+      "name": "Rio Vale",
+      "genre": "Technology & Future Studies",
+      "image": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%233498db'/><text x='100' y='120' font-size='80' text-anchor='middle' fill='white'>🐕</text></svg>",
+      "imageLarge": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><rect width='300' height='300' fill='%233498db'/><text x='150' y='180' font-size='120' text-anchor='middle' fill='white'>🐕</text></svg>",
+      "bio": "Rio Vale is a visionary author exploring the intersection of cutting-edge technology, artificial intelligence, and human potential. With deep expertise in emerging technologies, Rio crafts compelling analyses of how innovations in AI, quantum computing, space exploration, and neural interfaces will reshape our world and redefine what it means to be human.",
+      "stats": {
+        "publishedBooks": 7,
+        "publishingSince": 2025,
+        "series": 7
+      },
+      "specialties": ["Artificial Intelligence", "Quantum Computing", "Space Technology", "Biotechnology", "Robotics", "Nuclear Fusion", "Neural Interfaces"],
+      "links": {
+        "amazon": "https://www.amazon.com/stores/Rio-Vale/author/B0FF9M65TF",
+        "books2read": "https://books2read.com/ap/nADV5r/Rio-Vale"
+      }
+    },
+    {
+      "id": "siva-kanth",
+      "name": "Siva Kanth",
+      "genre": "Crime & Mystery Thrillers",
+      "image": "assets/images/authors/siva-kanth.jpg",
+      "imageLarge": "assets/images/authors/siva-kanth-large.jpg",
+      "bio": "Siva Kanth weaves intricate tales of crime, culture, and justice, masterfully blending traditional elements with modern detective work. Best known for the acclaimed Priya Lakshmi Crime Thriller series, Siva creates compelling mysteries that explore the rich cultural tapestry of India while delivering edge-of-your-seat suspense and authentic character development.",
+      "stats": {
+        "publishedBooks": 5,
+        "publishingSince": 2025,
+        "series": 1
+      },
+      "specialties": ["Cultural Mysteries", "Detective Fiction", "Crime Thrillers", "Historical Elements"],
+      "links": {
+        "amazon": "https://www.amazon.com/stores/Siva-Kanth/author/B0FD9K5D3Y",
+        "books2read": "https://books2read.com/ap/nzepJ1/Siva-Kanth"
+      }
+    },
+    {
+      "id": "michael-harrison",
+      "name": "Michael Harrison",
+      "genre": "Thriller & Espionage",
+      "image": "assets/images/authors/michael-harrison.jpg",
+      "imageLarge": "assets/images/authors/michael-harrison-large.jpg",
+      "bio": "Michael Harrison delivers high-stakes thriller fiction that combines authentic espionage elements with compelling character development. Known for the Shadow Agent series and standalone thrillers, Michael creates gripping narratives featuring FBI operations, corporate espionage, and international intrigue that keep readers on the edge of their seats.",
+      "stats": {
+        "publishedBooks": 3,
+        "publishingSince": 2025,
+        "series": 1
+      },
+      "specialties": ["FBI Thrillers", "Corporate Espionage", "International Intrigue", "Action Suspense"],
+      "links": {
+        "amazon": "https://www.amazon.com/stores/Michael-Harrison/author/B0FDJ3QF69",
+        "books2read": "https://books2read.com/ap/n4p9wZ/Michael-Harrison"
+      }
+    },
+    {
+      "id": "akiel-barton",
+      "name": "Akiel Barton",
+      "genre": "Satirical Social Commentary",
+      "image": "assets/images/authors/akiel-barton.jpg",
+      "imageLarge": "assets/images/authors/akiel-barton-large.jpg",
+      "bio": "Akiel Barton crafts brilliant satirical fiction that examines the intersection of technology, corporate culture, and human dignity in the 21st century. With a keen eye for social critique wrapped in dark comedy, Akiel's work challenges readers to think critically about modern society while entertaining them with wit and compelling storytelling.",
+      "stats": {
+        "publishedBooks": 2,
+        "publishingSince": 2025,
+        "series": 1
+      },
+      "specialties": ["Dark Comedy", "Social Satire", "Corporate Culture", "Political Commentary"],
+      "links": {
+        "amazon": "https://www.amazon.com/stores/Akiel-Barton/author/B0FF7HWS97"
+      }
+    }
+  ],
+  "books": [
+    {
+      "id": "art-of-falling",
+      "title": "The Art of Falling: A Second Chance Romance",
+      "authorId": "bishop-king",
+      "genre": "romance",
+      "description": "A heartwarming story of love rediscovered and the courage to fall again. When fate brings two former lovers back together, they must navigate past hurts and present uncertainties to find their second chance at happiness.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FCDPWTM2.01.L.jpg",
+      "price": "$0.99 - $14.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FCDPWTM2",
+      "books2readUrl": "https://books2read.com/ap/nOoWeo/Bishop-King",
+      "featured": true
+    },
+    {
+      "id": "blood-and-badges",
+      "title": "Blood and Badges: An LAPD Detective Romance",
+      "authorId": "bishop-king",
+      "genre": "romance",
+      "description": "Where love and duty collide in the streets of Los Angeles. A dedicated LAPD detective finds her world turned upside down when personal and professional lines blur in unexpected ways.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FCMYB49M.01.L.jpg",
+      "price": "$0.99 - $6.00",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FCMYB49M",
+      "books2readUrl": "https://books2read.com/ap/nOoWeo/Bishop-King"
+    },
+    {
+      "id": "hearts-across-continents",
+      "title": "Hearts Across Continents: Love Without Borders",
+      "authorId": "bishop-king",
+      "genre": "romance",
+      "description": "An international romance that spans cultures and continents. When two souls from different worlds meet, they discover that love knows no boundaries.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FCDY6RDR.01.L.jpg",
+      "price": "$0.99 - $6.00",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FCDY6RDR",
+      "books2readUrl": "https://books2read.com/ap/nOoWeo/Bishop-King"
+    },
+    {
+      "id": "turbulence",
+      "title": "Turbulence: Love at 40,000 feet",
+      "authorId": "bishop-king",
+      "genre": "romance",
+      "description": "High-altitude romance and adventure above the clouds. When turbulence hits more than just the flight, two passengers discover love in unexpected places.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FD8YC14Q.01.L.jpg",
+      "price": "$0.99 - $14.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FD8YC14Q",
+      "books2readUrl": "https://books2read.com/ap/nOoWeo/Bishop-King"
+    },
+    {
+      "id": "wounds-and-wonders",
+      "title": "Wounds & Wonders Across the World: The Healing Journey of Us",
+      "authorId": "bishop-king",
+      "genre": "romance",
+      "description": "A healing journey of love and discovery across the globe. Two souls find each other while healing from past wounds.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FCHW4YLW.01.L.jpg",
+      "price": "$0.99 - $6.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FCHW4YLW",
+      "books2readUrl": "https://books2read.com/ap/nOoWeo/Bishop-King"
+    },
+    {
+      "id": "agentic-revolution",
+      "title": "The Agentic Revolution: How Autonomous AI Agents Are Reshaping Work, Business, and Human Potential",
+      "authorId": "rio-vale",
+      "genre": "technology",
+      "description": "Chronicles the transformation from AI as tools to AI as autonomous teammates, exploring how agentic AI systems are achieving 200%+ ROI and revolutionizing how work gets done.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FF35RP26.01.L.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FF35RP26",
+      "books2readUrl": "https://books2read.com/ap/nADV5r/Rio-Vale",
+      "featured": true
+    },
+    {
+      "id": "biological-revolution",
+      "title": "The Biological Revolution: How Gene Editing, Longevity Science, and Synthetic Biology Are Redefining Life Itself",
+      "authorId": "rio-vale",
+      "genre": "technology",
+      "description": "Explores the convergence of CRISPR gene editing, longevity research, and synthetic biology where science fiction becomes medical reality, following real patients cured through gene therapy.",
+      "image": "assets/images/biological-revolution-cover.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "#",
+      "featured": true
+    },
+    {
+      "id": "fusion-revolution",
+      "title": "The Fusion Revolution: The Global Race to Harness the Power of Stars",
+      "authorId": "rio-vale",
+      "genre": "technology",
+      "description": "Chronicles the breakthrough moment when scientists achieved more energy from fusion than they put in, transforming a 70-year quest into a commercial race for unlimited clean energy.",
+      "image": "assets/images/fusion-revolution-cover.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "#"
+    },
+    {
+      "id": "neural-revolution",
+      "title": "The Neural Revolution: A Speculative Analysis of the Global Race to Connect Brains and Machines",
+      "authorId": "rio-vale",
+      "genre": "technology",
+      "description": "A speculative analysis exploring how brain-computer interfaces are dissolving boundaries between mind and machine, with implications for human consciousness and technological evolution.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FF3QWV2C.01.L.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FF3QWV2C",
+      "books2readUrl": "https://books2read.com/ap/nADV5r/Rio-Vale"
+    },
+    {
+      "id": "quantum-revolution",
+      "title": "The Quantum Revolution: The Global Race to Build Tomorrow's Computer",
+      "authorId": "rio-vale",
+      "genre": "technology",
+      "description": "A narrative journey through the race between Google's Willow processor and China's quantum systems, exploring how quantum advantage could reshape computing and global technological power.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FDZ7X8S2.01.L.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FDZ7X8S2",
+      "books2readUrl": "https://books2read.com/ap/nADV5r/Rio-Vale",
+      "featured": true
+    },
+    {
+      "id": "robotics-revolution",
+      "title": "The Robotics Revolution: How Intelligent Machines Are Reshaping Work, Society, and Human Purpose",
+      "authorId": "rio-vale",
+      "genre": "technology",
+      "description": "Examines how the convergence of AI and advanced robotics is enabling general-purpose robots to automate 60-80% of manual labor, exploring the technological and social implications.",
+      "image": "assets/images/robotics-revolution-cover.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "#",
+      "featured": true
+    },
+    {
+      "id": "space-revolution",
+      "title": "The Space Revolution: How the New Space Race is Creating Humanity's Next Economic Frontier",
+      "authorId": "rio-vale",
+      "genre": "technology",
+      "description": "Documents how space evolved from national prestige to a $613 billion commercial economy, exploring the democratization of space access and humanity's next economic frontier.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FNLP4RDL.01.L.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FNLP4RDL",
+      "books2readUrl": "https://books2read.com/ap/nADV5r/Rio-Vale"
+    },
+    {
+      "id": "kolam-killer",
+      "title": "The Kolam Killer: Patterns of Death and Devotion",
+      "authorId": "siva-kanth",
+      "genre": "mystery",
+      "series": "Priya Lakshmi Crime Series #1",
+      "description": "When traditional kolam patterns become murder scenes, Detective Priya Lakshmi must decode cultural mysteries to catch a killer.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FCPBKVTS.01.L.jpg",
+      "price": "₹49 INR - $14.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FCPBKVTS",
+      "books2readUrl": "https://books2read.com/ap/nzepJ1/Siva-Kanth"
+    },
+    {
+      "id": "ragas-of-revenge",
+      "title": "The Ragas of Revenge: When Melody Masks Murder",
+      "authorId": "siva-kanth",
+      "genre": "mystery",
+      "series": "Priya Lakshmi Crime Series #2",
+      "description": "Music and murder intertwine as classical ragas hide deadly secrets in this cultural thriller.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FCYCBNHD.01.L.jpg",
+      "price": "₹49 INR - $14.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FCYCBNHD",
+      "books2readUrl": "https://books2read.com/ap/nzepJ1/Siva-Kanth"
+    },
+    {
+      "id": "healing-hands",
+      "title": "The Healing Hands: Where Medicine Meets Murder",
+      "authorId": "siva-kanth",
+      "genre": "mystery",
+      "series": "Priya Lakshmi Crime Series #3",
+      "description": "Medical mysteries and dark secrets unfold in this gripping continuation of the acclaimed crime thriller series.",
+      "image": null,
+      "price": "Coming Soon",
+      "year": 2025,
+      "status": "in-progress",
+      "amazonUrl": null,
+      "books2readUrl": null
+    },
+    {
+      "id": "keepers-of-puhar",
+      "title": "The Keepers of Puhar: Race to the Lost City",
+      "authorId": "siva-kanth",
+      "genre": "adventure",
+      "description": "Adventure meets ancient mysteries in this thrilling archaeological discovery. Race to the lost city where cultural secrets await.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FMQ7MTY5.01.L.jpg",
+      "price": "$0.99 - $12.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FMQ7MTY5",
+      "books2readUrl": "https://books2read.com/ap/nzepJ1/Siva-Kanth"
+    },
+    {
+      "id": "ancient-witness",
+      "title": "The Ancient Witness: A Century Under the Peepal Tree",
+      "authorId": "siva-kanth",
+      "genre": "historical",
+      "description": "Historical fiction spanning generations of secrets and revelations. A century of stories unfold beneath an ancient tree that has witnessed it all.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FD8BR7L7.01.L.jpg",
+      "price": "$0.99 - $14.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FD8BR7L7",
+      "books2readUrl": "https://books2read.com/ap/nzepJ1/Siva-Kanth"
+    },
+    {
+      "id": "shadow-agent-1",
+      "title": "Shadow Agent: The Betrayal Within",
+      "authorId": "michael-harrison",
+      "genre": "thriller",
+      "series": "Shadow Agent Series #1",
+      "description": "FBI thriller with betrayal at every turn. When trust becomes a luxury no agent can afford, survival depends on uncovering the truth.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FDSHLF3B.01.L.jpg",
+      "price": "$0.99 - $19.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FDSHLF3B",
+      "books2readUrl": "https://books2read.com/ap/n4p9wZ/Michael-Harrison"
+    },
+    {
+      "id": "shadow-agent-2",
+      "title": "Shadow Agent: The Network Within",
+      "authorId": "michael-harrison",
+      "genre": "thriller",
+      "series": "Shadow Agent Series #2",
+      "description": "The conspiracy deepens with deadly consequences as Agent Marcus Cole discovers the betrayal goes deeper than he ever imagined.",
+      "image": null,
+      "price": "Coming Soon",
+      "year": 2025,
+      "status": "ready",
+      "amazonUrl": null,
+      "books2readUrl": null
+    },
+    {
+      "id": "dublin-deception",
+      "title": "The Dublin Deception: A Corporate Espionage Thriller",
+      "authorId": "michael-harrison",
+      "genre": "thriller",
+      "description": "Corporate intrigue and espionage in the heart of Ireland. When business deals turn deadly, every alliance becomes suspect.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FDH6SP1W.01.L.jpg",
+      "price": "$0.99 - $14.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FDH6SP1W",
+      "books2readUrl": "https://books2read.com/ap/n4p9wZ/Michael-Harrison"
+    },
+    {
+      "id": "paper-billionaires",
+      "title": "Paper Billionaires: When the System Says 'Error 404: Wealth Not Found'",
+      "authorId": "akiel-barton",
+      "genre": "satirical",
+      "description": "A scathing satire on modern wealth inequality and financial systems. Dark comedy meets social commentary in this brilliant examination of contemporary economics.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FF6HLVN1.01.L.jpg",
+      "price": "$2.99 - $12.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FF6HLVN1"
+    },
+    {
+      "id": "optimization-protocol",
+      "title": "The Optimization Protocol",
+      "authorId": "akiel-barton",
+      "genre": "satirical",
+      "description": "Dark comedy meets workplace surveillance and corporate control. A darkly comic examination of corporate culture and human dignity.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FFKRSG12.01.L.jpg",
+      "price": "$2.99 - $14.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FFKRSG12"
+    },
+    {
+      "id": "jury-rigged-nation",
+      "title": "Jury-Rigged Nation",
+      "authorId": "akiel-barton",
+      "genre": "satirical",
+      "description": "Dark comedy examining political systems and democratic processes. A satirical look at how modern governance becomes a chaotic lottery of power and incompetence.",
+      "image": null,
+      "price": "Coming Soon",
+      "year": 2025,
+      "status": "in-progress",
+      "amazonUrl": null
+    }
+  ],
+  "genres": [
+    { "id": "romance", "name": "Romance", "icon": "fas fa-heart", "description": "Contemporary romance featuring second chances, international love stories, and emotional healing journeys." },
+    { "id": "technology", "name": "Technology", "icon": "fas fa-microchip", "description": "Cutting-edge explorations of AI, quantum computing, space technology, and future innovations." },
+    { "id": "mystery", "name": "Mystery & Crime", "icon": "fas fa-search", "description": "Intricate crime thrillers featuring cultural mysteries, detective work, and justice pursued." },
+    { "id": "thriller", "name": "Thriller", "icon": "fas fa-mask", "description": "High-stakes espionage, corporate intrigue, and FBI operations that keep readers on edge." },
+    { "id": "satirical", "name": "Satirical Fiction", "icon": "fas fa-laugh", "description": "Darkly comic examinations of wealth inequality, corporate culture, and modern society." },
+    { "id": "historical", "name": "Historical Fiction", "icon": "fas fa-tree", "description": "Stories spanning generations, exploring cultural heritage and the passage of time." },
+    { "id": "adventure", "name": "Adventure", "icon": "fas fa-compass", "description": "Archaeological discoveries and thrilling journeys into ancient mysteries." }
+  ]
+}

@@ -6,20 +6,50 @@
     <title>KBC LLC - Independent Publishing Excellence</title>
     <meta name="description" content="KBC LLC is a dynamic independent publishing house specializing in romance, technology, thriller, and crime fiction across multiple genres.">
     <meta name="keywords" content="independent publisher, books, romance novels, technology books, thriller fiction, crime mystery">
-    
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KBC LLC - Independent Publishing Excellence">
+    <meta property="og:description" content="KBC LLC is a dynamic independent publishing house specializing in romance, technology, thriller, and crime fiction across multiple genres.">
+    <meta property="og:site_name" content="KBC LLC Publishing">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KBC LLC - Independent Publishing Excellence">
+    <meta name="twitter:description" content="Discover compelling stories across romance, technology, thriller, and mystery genres.">
+
     <!-- Favicon - Using a data URI for a simple icon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
-    
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KBC LLC",
+        "description": "Independent publishing house specializing in romance, technology, thriller, and crime fiction.",
+        "url": "https://kbcllc.org",
+        "email": "kbcllc2025@gmail.com",
+        "telephone": "+1-408-680-1491",
+        "sameAs": []
+    }
+    </script>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html">
@@ -43,6 +73,7 @@
     </nav>
 
     <!-- Hero Section -->
+    <main id="main-content">
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -268,6 +299,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -328,6 +361,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="assets/js/content-loader.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
