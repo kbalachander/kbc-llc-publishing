@@ -6,7 +6,7 @@
     "phone": "+1 (408) 680-1491",
     "url": "https://kbcllc.org",
     "stats": {
-      "totalTitles": 23,
+      "totalTitles": 24,
       "featuredAuthors": 5,
       "activeSeries": 3,
       "retailPlatforms": 12
@@ -39,11 +39,11 @@
       "imageLarge": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'><rect width='300' height='300' fill='%233498db'/><text x='150' y='180' font-size='120' text-anchor='middle' fill='white'>🐕</text></svg>",
       "bio": "Rio Vale is a visionary author exploring the intersection of cutting-edge technology, artificial intelligence, and human potential. With deep expertise in emerging technologies, Rio crafts compelling analyses of how innovations in AI, quantum computing, space exploration, and neural interfaces will reshape our world and redefine what it means to be human.",
       "stats": {
-        "publishedBooks": 7,
+        "publishedBooks": 8,
         "publishingSince": 2025,
-        "series": 7
+        "series": 8
       },
-      "specialties": ["Artificial Intelligence", "Quantum Computing", "Space Technology", "Biotechnology", "Robotics", "Nuclear Fusion", "Neural Interfaces"],
+      "specialties": ["Artificial Intelligence", "Quantum Computing", "Space Technology", "Biotechnology", "Robotics", "Nuclear Fusion", "Neural Interfaces", "Historical Analysis"],
       "links": {
         "amazon": "https://www.amazon.com/stores/Rio-Vale/author/B0FF9M65TF",
         "books2read": "https://books2read.com/ap/nADV5r/Rio-Vale"
@@ -261,6 +261,20 @@
       "status": "published",
       "amazonUrl": "https://www.amazon.com/dp/B0FNLP4RDL",
       "books2readUrl": "https://books2read.com/ap/nADV5r/Rio-Vale"
+    },
+    {
+      "id": "against-all-odds",
+      "title": "Against All Odds: A Century of Miracles, 1912-2025",
+      "authorId": "rio-vale",
+      "genre": "historical",
+      "description": "A compelling chronicle of humanity's most remarkable achievements and against-all-odds moments spanning over a century, from the Titanic era to the age of AI, exploring the extraordinary events that defied expectations and shaped our world.",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/B0FWZJSB62.01.L.jpg",
+      "price": "$14.99 - $24.99",
+      "year": 2025,
+      "status": "published",
+      "amazonUrl": "https://www.amazon.com/dp/B0FWZJSB62",
+      "books2readUrl": "https://books2read.com/ap/nADV5r/Rio-Vale",
+      "featured": true
     },
     {
       "id": "kolam-killer",
